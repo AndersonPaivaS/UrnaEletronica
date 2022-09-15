@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* CORES
+    AZUL: #596f99
+    AMARELO: #fcc200
+    VERDE: #567371
+    */
+}
+body {
+    background: rgb(30, 78, 180);
+}
+
+/*//////////// HEADER //////////////////*/
+
+header {
+    height: 10vh;
+}
+
+/*//////////// MAIN //////////////////*/
+
+main {
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    gap: 100px;
+    justify-content: center;
+
+}
+
+@media (max-width: 1300px) {
+    .num {
+        width: 10px;
+        height: 10px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #urna {
+        margin-bottom: 40px;
+        width: 100px;
+    }
+
+}
+
+/*//////////// SECTION URNA //////////////////*/
+
+#urna {
+    align-items: center;
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    justify-content: center;
+
+
+    height: 400px;
+    width: 750px;
+
+    margin-top: 100px;
+
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 10px rgba(0, 0, 0, 0.137);
+    background-color: rgba(204, 204, 204, 0.863);
+}
+
+#tse {
+
+    font-size: 70px;
+    color: rgba(20, 20, 20, 0.904);
+}
+
+#texto-tse {
+    font-weight: 800;
+}
+
+#campo1, #campo2 {
+    height: 40px;
+    width: 40px;
+}
+
+#voto {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    color: rgba(20, 20, 20, 0.904);
+}
+
+#presidente {
+    font-weight: 700;
+}
+
+/*//////////// TECLADO //////////////////*/
+
+#digitos {
+    align-items: center;
+    gap: 7px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+#operadores {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: auto;
+}
+
+#branco, #corrige {
+    border: 0;
+    border-radius: 8px;
+    padding: 45px;
+
+    font-weight: 800;
+    font-size: 30px;
+    color: rgba(20, 20, 20, 0.904);
+    transition: 0.4s;
+}
+
+#confirme {
+    padding: 70px;
+
+    border: 0;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgba(20, 20, 20, 0.904);
+    background-color: #2b811ab9;
+
+    transition: 0.4s;
+}
+
+#corrige {
+    background-color: #d45f11;
+}
+
+#branco:hover {
+    background-color: #bebebe;
+}
+
+#corrige:hover {
+    background-color: #9b440a;
+}
+
+#confirme:hover{
+    background-color: #1b4e10;
+}
+
+#teclado {
+    display: flex;
+    gap: 150px;
+    width: 230px;
+    height: 200px;
+    margin-top: -120px;
+    margin-right: 400px;
+
+}
+
+.num {
+    width: 110px;
+    height: 110px;
+
+    border: 0;
+    border-radius: 8px;
+    
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: rgb(20, 20, 20);
+    transition: 0.4s;
+}
+
+.num:hover {
+    background-color: #fcc100b7;
+}
+
+#comBotao {
+    padding: 60px;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+
+}
+
+#voltar {
+    padding: 15px;
+    margin-bottom: 15px;
+
+    border: 0;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 15px;
+    color:  rgba(20, 20, 20, 0.904);
+    background-color: rgba(204, 204, 204, 0.863);
+}
+
+
+

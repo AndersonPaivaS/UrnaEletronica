@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSE | Eleições 2022 </title>
+    <link rel="stylesheet" href="../styles/urna.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="titulo"></h1>
+    </header>
+    <main>
+            <section id="comBotao">
+                <div id="urna">
+                    <img src="" alt="">
+                    <h1 id="tse"> TSE </h1>
+                    <p id="texto-tse"> Tribunal Superior Eleitoral </p>
+                    <div id="voto">
+                        <p id="presidente">PRESIDENTE</p>
+                        <form action="">
+                            <input id="campo1" type="text" maxlength="1" readonly="readonly" > 
+                            <input id="campo2" type="text" maxlength="1" readonly="readonly" >
+                        </form>
+                    </div>
+
+                    <div id="votar-novamente">
+                        
+                    </div>
+                </div>
+
+                <div>
+                    
+                </div>
+            </section>
+            
+
+        <div id="teclado">
+            <div id="digitos">
+                <button class="num" onclick="inserir(1)">1</button>
+                <button class="num" onclick="inserir(2)">2</button>
+                <button class="num" onclick="inserir(3)">3</button>
+                <button class="num" onclick="inserir(4)">4</button>
+                <button class="num" onclick="inserir(5)">5</button>
+                <button class="num" onclick="inserir(6)">6</button>
+                <button class="num" onclick="inserir(7)">7</button>
+                <button class="num" onclick="inserir(8)">8</button>
+                <button class="num" onclick="inserir(9)">9</button>
+                <button class="num" onclick="inserir(0)">0</button>
+            </div>
+            <dir id="operadores">
+                <button id="branco" class="operacoes" onclick="anular()" >Branco</button>
+                <button id="corrige" class="operacoes" onclick="corrigir()">Corrige</button>
+                <button id="confirme" class="operacoes" onclick="votar()">Confirme</button>
+            </dir>
+        </div>
+    </main>
+
+    <script src="../JS/urna.js"></script>
+</body>
+</html>
